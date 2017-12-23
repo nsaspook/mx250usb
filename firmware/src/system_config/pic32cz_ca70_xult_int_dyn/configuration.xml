@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configuration>
+  <DisplayManager>
+    <SystemInitScript dnOrder="0"/>
+    <SystemStartScript dnOrder="1"/>
+  </DisplayManager>
+  <General>
+    <HarmonyPath dnOrder="0" path="../../../.."/>
+    <Processor dnOrder="1" name="PIC32CZ2038CA70144"/>
+    <Board dnOrder="2" name=""/>
+    <ForceOptimization dnOrder="3" flag="false"/>
+    <MergeStrategy dnOrder="4" flag="ALL"/>
+  </General>
+  <Manifest>
+    <Files dnOrder="0">
+      <File dnOrder="0">
+        <Name dnOrder="0">usb_billboard.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
+      </File>
+      <File dnOrder="1">
+        <Name dnOrder="0">sys_int_mapping_pic32c.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="2">
+        <Name dnOrder="0">driver_common.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/driver</Path>
+      </File>
+      <File dnOrder="3">
+        <Name dnOrder="0">usb_host.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
+      </File>
+      <File dnOrder="4">
+        <Name dnOrder="0">osal.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/osal</Path>
+      </File>
+      <File dnOrder="5">
+        <Name dnOrder="0">usb_device_cdc.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
+      </File>
+      <File dnOrder="6">
+        <Name dnOrder="0">sys_int_pic32c.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="7">
+        <Name dnOrder="0">usb_host_hub_interface.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
+      </File>
+      <File dnOrder="8">
+        <Name dnOrder="0">usb_device_local.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/usb/src</Path>
+      </File>
+      <File dnOrder="9">
+        <Name dnOrder="0">usb_common.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
+      </File>
+      <File dnOrder="10">
+        <Name dnOrder="0">system_pic32c.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/arch/arm</Path>
+      </File>
+      <File dnOrder="11">
+        <Name dnOrder="0">sys_ports.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/ports</Path>
+      </File>
+      <File dnOrder="12">
+        <Name dnOrder="0">drv_usbhsv1_device.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/framework/driver/usb/usbhsv1/src/dynamic</Path>
+      </File>
+      <File dnOrder="13">
+        <Name dnOrder="0">usb_chapter_9.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
+      </File>
+      <File dnOrder="14">
+        <Name dnOrder="0">driver.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/driver</Path>
+      </File>
+      <File dnOrder="15">
+        <Name dnOrder="0">usb_hub.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
+      </File>
+      <File dnOrder="16">
+        <Name dnOrder="0">usb_device_mapping.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/usb/src</Path>
+      </File>
+      <File dnOrder="17">
+        <Name dnOrder="0">usb_host_hub.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
+      </File>
+      <File dnOrder="18">
+        <Name dnOrder="0">usb_device.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/framework/usb/src/dynamic</Path>
+      </File>
+      <File dnOrder="19">
+        <Name dnOrder="0">sys_clk_compatibility.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="20">
+        <Name dnOrder="0">sys_clk.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="21">
+        <Name dnOrder="0">drv_usbhsv1.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/framework/driver/usb/usbhsv1/src/dynamic</Path>
+      </File>
+      <File dnOrder="22">
+        <Name dnOrder="0">osal_impl_basic.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/osal</Path>
+      </File>
+      <File dnOrder="23">
+        <Name dnOrder="0">sys_clk_mapping.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/clk</Path>
+      </File>
+      <File dnOrder="24">
+        <Name dnOrder="0">devices_pic32c.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/arch/arm</Path>
+      </File>
+      <File dnOrder="25">
+        <Name dnOrder="0">osal_definitions.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/osal</Path>
+      </File>
+      <File dnOrder="26">
+        <Name dnOrder="0">sys_int_pic32c.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/framework/system/int/src</Path>
+      </File>
+      <File dnOrder="27">
+        <Name dnOrder="0">usb_device.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
+      </File>
+      <File dnOrder="28">
+        <Name dnOrder="0">drv_usbhsv1_local.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/driver/usb/usbhsv1/src</Path>
+      </File>
+      <File dnOrder="29">
+        <Name dnOrder="0">system.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system</Path>
+      </File>
+      <File dnOrder="30">
+        <Name dnOrder="0">drv_usbhsv1_variant_mapping.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/driver/usb/usbhsv1/src</Path>
+      </File>
+      <File dnOrder="31">
+        <Name dnOrder="0">sys_debug.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/debug</Path>
+      </File>
+      <File dnOrder="32">
+        <Name dnOrder="0">usb_device_cdc_acm.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/framework/usb/src/dynamic</Path>
+      </File>
+      <File dnOrder="33">
+        <Name dnOrder="0">usb_cdc.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
+      </File>
+      <File dnOrder="34">
+        <Name dnOrder="0">usb_device_cdc_local.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/usb/src</Path>
+      </File>
+      <File dnOrder="35">
+        <Name dnOrder="0">drv_usbhsv1.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/driver/usb/usbhsv1</Path>
+      </File>
+      <File dnOrder="36">
+        <Name dnOrder="0">usb_device_cdc.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/framework/usb/src/dynamic</Path>
+      </File>
+      <File dnOrder="37">
+        <Name dnOrder="0">sys_int.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/int</Path>
+      </File>
+      <File dnOrder="38">
+        <Name dnOrder="0">drv_usb.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/driver/usb</Path>
+      </File>
+      <File dnOrder="39">
+        <Name dnOrder="0">usb_host_client_driver.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
+      </File>
+      <File dnOrder="40">
+        <Name dnOrder="0">sys_wdt_local.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/framework/system/wdt</Path>
+      </File>
+    </Files>
+    <Templates dnOrder="1">
+      <Template dnOrder="0">
+        <Name dnOrder="0">main.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app</Path>
+      </Template>
+      <Template dnOrder="1">
+        <Name dnOrder="0">bsp.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32cz_ca70_xult_int_dyn/bsp</Path>
+        <Checksum dnOrder="2">DB98DFAF486954A1F23D1EE00D403D83</Checksum>
+        <ProjectFileChecksum dnOrder="3">6816B1E71F6A977FCEAEAFF89389CAF2</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="2">
+        <Name dnOrder="0">system_init.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32cz_ca70_xult_int_dyn</Path>
+        <Checksum dnOrder="2">4A2E07718028DFCC610A390E427C4F58</Checksum>
+        <ProjectFileChecksum dnOrder="3">5EDE0518DD100D232BF5F0F7ED19EB52</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="3">
+        <Name dnOrder="0">sys_clk_static.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32cz_ca70_xult_int_dyn/framework/system/clk/src</Path>
+        <Checksum dnOrder="2">4622697A95D026F97B4D630ED2E64C49</Checksum>
+        <ProjectFileChecksum dnOrder="3">6F6880BCB84080E6B6F515C15DAB0B8A</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="4">
+        <Name dnOrder="0">system_config.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32cz_ca70_xult_int_dyn</Path>
+        <Checksum dnOrder="2">97345D07446F86E985BBF6345D3BD2D7</Checksum>
+        <ProjectFileChecksum dnOrder="3">D5A3B0DE360C987AE58E96A2F1C1B705</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="5">
+        <Name dnOrder="0">system_tasks.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32cz_ca70_xult_int_dyn</Path>
+        <Checksum dnOrder="2">671488E5556F8A34F38F69BDCC89B6FE</Checksum>
+        <ProjectFileChecksum dnOrder="3">52F3F56312162C5EE123B576072F4D2C</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="6">
+        <Name dnOrder="0">system_startup.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32cz_ca70_xult_int_dyn</Path>
+        <Checksum dnOrder="2">15EA78D04FAA5A851518494A8A3E58FB</Checksum>
+        <ProjectFileChecksum dnOrder="3">E815A4C8CC44B498A50A5E73C42EC24F</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="7">
+        <Name dnOrder="0">system_pic32c.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32cz_ca70_xult_int_dyn</Path>
+        <Checksum dnOrder="2">FABCACAC818A8F1DA2A308176FCFDFE1</Checksum>
+        <ProjectFileChecksum dnOrder="3">B6014B8317F19DC4642CD5CA837CFD3D</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="8">
+        <Name dnOrder="0">app.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app</Path>
+      </Template>
+      <Template dnOrder="9">
+        <Name dnOrder="0">sys_wdt.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32cz_ca70_xult_int_dyn/framework/system/wdt</Path>
+        <Checksum dnOrder="2">719D990C96B495ACCD93D10BF6B4A4F4</Checksum>
+        <ProjectFileChecksum dnOrder="3">B3C4523F1B6089BCB688D90499E6FDE3</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="10">
+        <Name dnOrder="0">bsp.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32cz_ca70_xult_int_dyn/bsp</Path>
+        <Checksum dnOrder="2">695D501021FF0EE823C1C891F9C480BE</Checksum>
+        <ProjectFileChecksum dnOrder="3">6A20EEF1CA2FC70F30CF2B18F74D867E</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="11">
+        <Name dnOrder="0">sys_wdt.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32cz_ca70_xult_int_dyn/framework/system/wdt</Path>
+        <Checksum dnOrder="2">3C4E93195E91E856098EE4A5B5AD75DF</Checksum>
+        <ProjectFileChecksum dnOrder="3">38D4CCC47988854FFC5776DCA03E2C98</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="12">
+        <Name dnOrder="0">sys_ports_static_pic32c.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32cz_ca70_xult_int_dyn/framework/system/ports/src</Path>
+        <Checksum dnOrder="2">6515620DAFC8D0415F17F871631E99CE</Checksum>
+        <ProjectFileChecksum dnOrder="3">7EA81BC5C56DB3901CF3E8F024CC9C97</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="13">
+        <Name dnOrder="0">app.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/app</Path>
+      </Template>
+      <Template dnOrder="14">
+        <Name dnOrder="0">system_definitions.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32cz_ca70_xult_int_dyn</Path>
+        <Checksum dnOrder="2">62FD1E0A56377C7316E70B66670E841F</Checksum>
+        <ProjectFileChecksum dnOrder="3">29B1D309265AAC7F78A9E4111C1A1913</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="15">
+        <Name dnOrder="0">system_interrupt.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32cz_ca70_xult_int_dyn</Path>
+        <Checksum dnOrder="2">9142C309C9B2BF5DE02F74E5E5608E9C</Checksum>
+        <ProjectFileChecksum dnOrder="3">591270DA2968458ADD5E71A0DB5F8B42</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="16">
+        <Name dnOrder="0">newlib_syscalls_pic32c.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32cz_ca70_xult_int_dyn</Path>
+        <Checksum dnOrder="2">78F195E6E0C4AE38D3F9C4BB7E6CC7E5</Checksum>
+        <ProjectFileChecksum dnOrder="3">2252186FE375D92F9FAB9A8C1D3E9815</ProjectFileChecksum>
+      </Template>
+      <Template dnOrder="17">
+        <Name dnOrder="0">default.ld</Name>
+        <Path dnOrder="1">Linker&amp;#160;Files/app</Path>
+        <Checksum dnOrder="2">53E5E1F855A9FC8911275B0E08151D6D</Checksum>
+        <ProjectFileChecksum dnOrder="3">9241BDFEF6D8031B3D3C2CBB6AABBBAF</ProjectFileChecksum>
+      </Template>
+    </Templates>
+    <CompilerItems dnOrder="2">
+      <C32 dnOrder="0">
+        <Include dnOrder="0" value="C:\microchip\harmony\Repo\usb\apps\usb\device\cdc_com_port_dual\firmware\src"/>
+        <Include dnOrder="1" value="C:\microchip\harmony\Repo\usb\apps\usb\device\cdc_com_port_dual\firmware\src\system_config\pic32cz_ca70_xult_int_dyn"/>
+        <Include dnOrder="2" value="C:\microchip\harmony\Repo\usb\apps\usb\device\cdc_com_port_dual\firmware\src\pic32cz_ca70_xult_int_dyn"/>
+        <Include dnOrder="3" value="C:\microchip\harmony\Repo\usb\framework"/>
+        <Include dnOrder="4" value="C:\microchip\harmony\Repo\usb\apps\usb\device\cdc_com_port_dual\firmware\src\system_config\pic32cz_ca70_xult_int_dyn\framework"/>
+        <Include dnOrder="5" value="../src/system_config/pic32cz_ca70_xult_int_dyn/bsp"/>
+        <Include dnOrder="6" value="../../../../../../packs/pic32c_dfp"/>
+        <Include dnOrder="7" value="../../../../../../packs/arm/CMSIS/Core/Include"/>
+      </C32>
+    </CompilerItems>
+  </Manifest>
+</Configuration>
