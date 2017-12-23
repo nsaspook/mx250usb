@@ -103,11 +103,11 @@ void __attribute__((nomips16)) SYS_DEVCON_PerformanceConfig( unsigned int sysclk
     if (PLIB_PCACHE_ExistsWaitState(PCACHE_ID_0))
     {
         int ws; /* number of wait states */
-        if (sysclk <= 18000000)
+        if (sysclk <= 30000000)
             ws = 0;
-        else if (sysclk <= 36000000)
+        else if (sysclk <= 60000000)
             ws = 1;
-        else if (sysclk <= 54000000)
+        else if (sysclk <= 80000000)
             ws = 2;
         else
             ws = 3;

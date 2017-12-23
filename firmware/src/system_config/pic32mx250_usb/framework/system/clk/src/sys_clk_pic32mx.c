@@ -93,18 +93,11 @@ void SYS_CLK_Initialize( const SYS_CLK_INIT const * clkInit )
     
     PLIB_OSC_FRCDivisorSelect( OSC_ID_0, OSC_FRC_DIV_2);
 
-	/* Configure UPLL */
-
-	PLIB_OSC_UPLLMultiplierSelect(OSC_ID_0, 24);
-	PLIB_OSC_UPLLOutputDivisorSet(OSC_ID_0, OSC_UPLL_OUT_DIV_2);
-
-	PLIB_OSC_UsbClockSourceSelect (OSC_ID_0, SYS_OSC_USBCLK_PRIMARY);
 
 
 
     /* Enable Peripheral Bus 1 */
-    PLIB_OSC_PBClockDivisorSet (OSC_ID_0, 0, 2 );
-    PLIB_OSC_PBOutputClockEnable (OSC_ID_0, 0 );
+    PLIB_OSC_PBClockDivisorSet (OSC_ID_0, 0, 1 );
 
  
     /* Disable REFCLKO1*/
