@@ -208,7 +208,8 @@
       <Template dnOrder="2">
         <Name dnOrder="0">bsp.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mx_xlp_sk_int_dyn/bsp</Path>
-        <Checksum dnOrder="2">21E2070A4AB94FF2B7F7533F40A50203</Checksum>
+        <Checksum dnOrder="2">48AE2EDBDD29D5DEE11EA6DE9FFEE92A</Checksum>
+        <ProjectFileChecksum dnOrder="3">1F973D8AC2C4F9AC993AED5191C136B7</ProjectFileChecksum>
       </Template>
       <Template dnOrder="3">
         <Name dnOrder="0">system_init.c</Name>
@@ -227,12 +228,14 @@
       <Template dnOrder="6">
         <Name dnOrder="0">bsp.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32mx_xlp_sk_int_dyn/bsp</Path>
-        <Checksum dnOrder="2">794590B7929F4772F831ADF85D4EB358</Checksum>
+        <Checksum dnOrder="2">A5DAE53F2311614D090F492A57163614</Checksum>
+        <ProjectFileChecksum dnOrder="3">1622983792D826411669241C11D24197</ProjectFileChecksum>
       </Template>
       <Template dnOrder="7">
         <Name dnOrder="0">sys_ports_static.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mx_xlp_sk_int_dyn/framework/system/ports/src</Path>
         <Checksum dnOrder="2">3E52BF68A093B333A9BEC0C19968C577</Checksum>
+        <ProjectFileChecksum dnOrder="3">99F63B393704B4D4526FFD5899A97F57</ProjectFileChecksum>
       </Template>
       <Template dnOrder="8">
         <Name dnOrder="0">system_exceptions.c</Name>
@@ -270,7 +273,7 @@
       <Template dnOrder="15">
         <Name dnOrder="0">system_config.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32mx_xlp_sk_int_dyn</Path>
-        <Checksum dnOrder="2">B7E4E40ED6D2FF6BEB266957D04083EC</Checksum>
+        <Checksum dnOrder="2">BB2577DA59234061EE2041C334697BBE</Checksum>
         <ProjectFileChecksum dnOrder="3">1574DD14042AA2225A8322CA1E85963A</ProjectFileChecksum>
       </Template>
       <Template dnOrder="16">

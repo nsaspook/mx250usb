@@ -98,21 +98,12 @@ extern "C" {
 #define SYS_PORT_A_CNEN         0x0000
 
 #define SYS_PORT_B_ANSEL        0x7812
-#define SYS_PORT_B_TRIS         0x7FFF
+#define SYS_PORT_B_TRIS         0x7BFF
 #define SYS_PORT_B_LAT          0x0000
 #define SYS_PORT_B_ODC          0x0000
 #define SYS_PORT_B_CNPU         0x0000
 #define SYS_PORT_B_CNPD         0x0000
 #define SYS_PORT_B_CNEN         0x0000
-
-#define SYS_PORT_C_ANSEL        0xFFCF
-#define SYS_PORT_C_TRIS         0xFFCF
-#define SYS_PORT_C_LAT          0x0000
-#define SYS_PORT_C_ODC          0x0000
-#define SYS_PORT_C_CNPU         0x0000
-#define SYS_PORT_C_CNPD         0x0000
-#define SYS_PORT_C_CNEN         0x0000
-
 
 /*** Interrupt System Service Configuration ***/
 #define SYS_INT                     true
@@ -213,10 +204,16 @@ extern "C" {
 /*** Application Defined Pins ***/
 
 /*** Functions for APP_USB_LED_1 pin ***/
-#define APP_USB_LED_1Toggle() PLIB_PORTS_PinToggle(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_15)
-#define APP_USB_LED_1On() PLIB_PORTS_PinClear(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_15)
-#define APP_USB_LED_1Off() PLIB_PORTS_PinSet(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_15)
-#define APP_USB_LED_1StateGet() (!(PLIB_PORTS_PinGetLatched(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_15)))
+#define APP_USB_LED_1Toggle() PLIB_PORTS_PinToggle(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_10)
+#define APP_USB_LED_1On() PLIB_PORTS_PinSet(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_10)
+#define APP_USB_LED_1Off() PLIB_PORTS_PinClear(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_10)
+#define APP_USB_LED_1StateGet() PLIB_PORTS_PinGetLatched(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_10)
+
+/*** Functions for APP_USB_LED_22 pin ***/
+#define APP_USB_LED_22Toggle() PLIB_PORTS_PinToggle(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_15)
+#define APP_USB_LED_22On() PLIB_PORTS_PinSet(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_15)
+#define APP_USB_LED_22Off() PLIB_PORTS_PinClear(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_15)
+#define APP_USB_LED_22StateGet() PLIB_PORTS_PinGetLatched(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_15)
 
 /*** Functions for APP_USB_LED_2 pin ***/
 #define APP_USB_LED_2Toggle() PLIB_PORTS_PinToggle(PORTS_ID_0, PORT_CHANNEL_C, PORTS_BIT_POS_4)
