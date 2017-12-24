@@ -504,9 +504,6 @@ void SYS_Initialize ( void* data )
     SYS_DEVCON_Initialize(SYS_DEVCON_INDEX_0, (SYS_MODULE_INIT*)NULL);
     SYS_DEVCON_PerformanceConfig(SYS_CLK_SystemFrequencyGet());
     SYS_PORTS_Initialize();
-    
-    LATBbits.LATB9 = !LATBbits.LATB9;
-    LATBbits.LATB13 = !LATBbits.LATB13;
 
     /* Initialize Drivers */
 
