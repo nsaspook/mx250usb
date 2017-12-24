@@ -69,7 +69,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 
 /*** DEVCFG1 ***/
 
-#pragma config FNOSC =      PRIPLL
+#pragma config FNOSC =      FRCPLL
 #pragma config FSOSCEN =    OFF
 #pragma config IESO =       OFF
 #pragma config POSCMOD =    OFF
@@ -82,11 +82,11 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #pragma config FWDTWINSZ =  WINSZ_50
 /*** DEVCFG2 ***/
 
-#pragma config FPLLIDIV =   DIV_3
+#pragma config FPLLIDIV =   DIV_2
 #pragma config FPLLMUL =    MUL_24
 #pragma config FPLLODIV =   DIV_2
-#pragma config UPLLIDIV =   DIV_3
-#pragma config UPLLEN =     ON
+#pragma config UPLLIDIV =   DIV_2
+#pragma config UPLLEN =     OFF
 /*** DEVCFG3 ***/
 
 #pragma config USERID =     0xffff
@@ -116,14 +116,14 @@ const DRV_USBFS_INIT drvUSBInit =
 
     /* Interrupt Source for USB module */
     .interruptSource = INT_SOURCE_USB_1,
-    
+
     /* System module initialization */
     .moduleInit = {SYS_MODULE_POWER_RUN_FULL},
-    
+
     .operationMode = DRV_USBFS_OPMODE_DEVICE,
-    
+
     .operationSpeed = USB_SPEED_FULL,
-    
+
     /* Stop in idle */
     .stopInIdle = false,
 
@@ -163,10 +163,10 @@ SYSTEM_OBJECTS sysObj;
  **************************************************/
     const USB_DEVICE_CDC_INIT cdcInit0 =
     {
-        .queueSizeRead = 1,
-        .queueSizeWrite = 1,
-        .queueSizeSerialStateNotification = 1
-    };
+    .queueSizeRead = 1,
+    .queueSizeWrite = 1,
+    .queueSizeSerialStateNotification = 1
+};
 /**************************************************
  * USB Device Layer Function Driver Registration 
  * Table
@@ -174,7 +174,7 @@ SYSTEM_OBJECTS sysObj;
 const USB_DEVICE_FUNCTION_REGISTRATION_TABLE funcRegistrationTable[2] =
 {
     /* Function 1 */
-    { 
+    {
         .configurationValue = 1,    /* Configuration value */ 
         .interfaceNumber = 0,       /* First interfaceNumber of this function */ 
         .speed = USB_SPEED_FULL,    /* Function Speed */ 
@@ -235,7 +235,7 @@ const uint8_t fullSpeedConfigurationDescriptor[]=
     0x00,                                               // Configuration string index
     USB_ATTRIBUTE_DEFAULT | USB_ATTRIBUTE_SELF_POWERED, // Attributes
     50,                                                 // Max power consumption (2X mA)
-    /* Descriptor for Function 1 - CDC     */ 
+    /* Descriptor for Function 1 - CDC     */
     /* Interface Association Descriptor: CDC Function 1*/
     0x08,   // Size of this descriptor in bytes
     0x0B,   // Interface association descriptor type
@@ -245,7 +245,7 @@ const uint8_t fullSpeedConfigurationDescriptor[]=
     0x02,   // bInterfaceSubclass of the first interface
     0x01,   // bInterfaceProtocol of the first interface
     0x00,   // Interface string index
-    
+
     /* Interface Descriptor */
 
     0x09,                                           // Size of this descriptor in bytes
@@ -312,7 +312,7 @@ const uint8_t fullSpeedConfigurationDescriptor[]=
     0x40,0x00,                  // Max packet size of this EP
     0x00,                       // Interval (in ms)
 
-     /* Bulk Endpoint (IN)Descriptor */
+    /* Bulk Endpoint (IN)Descriptor */
 
     0x07,                       // Size of this descriptor
     USB_DESCRIPTOR_ENDPOINT,    // Endpoint Descriptor
@@ -321,7 +321,7 @@ const uint8_t fullSpeedConfigurationDescriptor[]=
     0x40,0x00,                  // Max packet size of this EP
     0x00,                       // Interval (in ms)
 
-    /* Descriptor for Function 1 - Vendor     */	
+    /* Descriptor for Function 1 - Vendor     */
     /* Interface Descriptor */
 
     0x09,                       // Size of this descriptor in bytes
@@ -351,7 +351,7 @@ const uint8_t fullSpeedConfigurationDescriptor[]=
     USB_TRANSFER_TYPE_BULK,     // Attributes
     0x40,0x00,                  // Max packet size of this EP
     1,                           // Interval
-  
+
 
 
 };
@@ -369,21 +369,21 @@ USB_DEVICE_CONFIGURATION_DESCRIPTORS_TABLE fullSpeedConfigDescSet[1] =
  *  String descriptors.
  *************************************/
 
- /*******************************************
+/*******************************************
  *  Language code string descriptor
  *******************************************/
     const struct
     {
-        uint8_t bLength;
-        uint8_t bDscType;
-        uint16_t string[1];
-    }
+    uint8_t bLength;
+    uint8_t bDscType;
+    uint16_t string[1];
+}
     sd000 =
     {
         sizeof(sd000),          // Size of this descriptor in bytes
         USB_DESCRIPTOR_STRING,  // STRING descriptor type
         {0x0409}                // Language ID
-    };
+};
 /*******************************************
  *  Manufacturer string descriptor
  *******************************************/
@@ -392,14 +392,14 @@ USB_DEVICE_CONFIGURATION_DESCRIPTORS_TABLE fullSpeedConfigDescSet[1] =
         uint8_t bLength;        // Size of this descriptor in bytes
         uint8_t bDscType;       // STRING descriptor type
         uint16_t string[8];    // String
-    }
+}
     sd001 =
     {
         sizeof(sd001),
         USB_DESCRIPTOR_STRING,
         {'N','S','A','S','P','O','O','K'}
-		
-    };
+
+};
 
 /*******************************************
  *  Product string descriptor
@@ -408,14 +408,14 @@ USB_DEVICE_CONFIGURATION_DESCRIPTORS_TABLE fullSpeedConfigDescSet[1] =
     {
         uint8_t bLength;        // Size of this descriptor in bytes
         uint8_t bDscType;       // STRING descriptor type
-        uint16_t string[9];    // String
-    }
+        uint16_t string[15];    // String
+}
     sd002 =
     {
         sizeof(sd002),
         USB_DESCRIPTOR_STRING,
-		{'m','x','2','5','0',' ','D','A','Q'}
-    }; 
+		{'m','x','2','5','0',' ','D','A','Q','D','E','V','I','C','E'}
+};
 
 /***************************************
  * Array of string descriptors
@@ -435,12 +435,12 @@ const USB_DEVICE_MASTER_DESCRIPTOR usbMasterDescriptor =
     &deviceDescriptor,          /* Full speed descriptor */
     1,                          /* Total number of full speed configurations available */
     fullSpeedConfigDescSet,     /* Pointer to array of full speed configurations descriptors*/
-    NULL, 
-    0, 
-    NULL, 
+    NULL,
+    0,
+    NULL,
     3,                          // Total number of string descriptors available.
     stringDescriptors,          // Pointer to array of string descriptors.
-    NULL, 
+    NULL,
     NULL
 };
 
@@ -452,11 +452,11 @@ const USB_DEVICE_INIT usbDevInitData =
 {
     /* System module initialization */
     .moduleInit = {SYS_MODULE_POWER_RUN_FULL},
-    
+
     /* Number of function drivers registered to this instance of the
        USB device layer */
     .registeredFuncCount = 2,
-    
+
     /* Function driver table registered to this instance of the USB device layer*/
     .registeredFunctions = (USB_DEVICE_FUNCTION_REGISTRATION_TABLE*)funcRegistrationTable,
 
@@ -465,16 +465,16 @@ const USB_DEVICE_INIT usbDevInitData =
 
     /* USB Device Speed */
     .deviceSpeed = USB_SPEED_FULL,
-    
+
     /* Index of the USB Driver to be used by this Device Layer Instance */
     .driverIndex = DRV_USBFS_INDEX_0,
 
     /* Pointer to the USB Driver Functions. */
     .usbDriverInterface = DRV_USBFS_DEVICE_INTERFACE,
-    
+
     /* Specify queue size for vendor endpoint read */
     .queueSizeEndpointRead = 1,
-    
+
     /* Specify queue size for vendor endpoint write */
     .queueSizeEndpointWrite= 1,
 };
@@ -504,12 +504,16 @@ void SYS_Initialize ( void* data )
     SYS_DEVCON_Initialize(SYS_DEVCON_INDEX_0, (SYS_MODULE_INIT*)NULL);
     SYS_DEVCON_PerformanceConfig(SYS_CLK_SystemFrequencyGet());
     SYS_PORTS_Initialize();
-
-    /* Board Support Package Initialization */
-    BSP_Initialize();        
+    
+    LATBbits.LATB9 = !LATBbits.LATB9;
+    LATBbits.LATB13 = !LATBbits.LATB13;
 
     /* Initialize Drivers */
-    /* Initialize USB Driver */ 
+
+    /* Initialize ADC */
+    DRV_ADC_Initialize();
+
+    /* Initialize USB Driver */
     sysObj.drvUSBObject = DRV_USBFS_Initialize(DRV_USBFS_INDEX_0, (SYS_MODULE_INIT *) &drvUSBInit);
 
     /* Initialize System Services */
@@ -538,5 +542,5 @@ void SYS_Initialize ( void* data )
 
 /*******************************************************************************
  End of File
-*/
+ */
 

@@ -86,9 +86,9 @@ static const PORTS_CHANNEL led_port_channel_map[] =
 */
 static const PORTS_BIT_POS led_port_bit_pos_map[] =
 {
-    PORTS_BIT_POS_10,
-    PORTS_BIT_POS_10,
-    PORTS_BIT_POS_10
+    PORTS_BIT_POS_9,
+    PORTS_BIT_POS_9,
+    PORTS_BIT_POS_9
 };
 
 // *****************************************************************************
@@ -107,9 +107,9 @@ static const PORTS_BIT_POS led_port_bit_pos_map[] =
 */
 static const BSP_LED_ACTIVE_LEVEL led_active_level_map[] =
 {
-   BSP_LED_ACTIVE_LOW,
-   BSP_LED_ACTIVE_LOW,
-   BSP_LED_ACTIVE_LOW
+   BSP_LED_ACTIVE_HIGH,
+   BSP_LED_ACTIVE_HIGH,
+   BSP_LED_ACTIVE_HIGH
 };
 
 // *****************************************************************************
@@ -272,8 +272,6 @@ void BSP_Initialize(void )
     BSP_LEDOff(APP_USB_LED_1);
     BSP_LEDOff(APP_USB_LED_2);
     BSP_LEDOff(APP_USB_LED_3);
-    /* BT Pin Settings */
-    PLIB_PORTS_PinClear(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_5);
 }
 
 /*******************************************************************************

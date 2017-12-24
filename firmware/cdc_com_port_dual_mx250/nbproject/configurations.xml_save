@@ -30,6 +30,25 @@
             <itemPath>../src/system_config/pic32mx250_usb/system_config.h</itemPath>
             <itemPath>../src/system_config/pic32mx250_usb/system_definitions.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="f5"
+                         displayName="pic32mx250_usb"
+                         projectFiles="true">
+            <logicalFolder name="f2" displayName="bsp" projectFiles="true">
+              <itemPath>../src/system_config/pic32mx250_usb/bsp/bsp.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="framework" projectFiles="true">
+              <logicalFolder name="f1" displayName="system" projectFiles="true">
+                <logicalFolder name="f1" displayName="devcon" projectFiles="true">
+                  <logicalFolder name="f1" displayName="src" projectFiles="true">
+                    <itemPath>../src/system_config/pic32mx250_usb/framework/system/devcon/src/sys_devcon_local.h</itemPath>
+                  </logicalFolder>
+                  <itemPath>../src/system_config/pic32mx250_usb/framework/system/devcon/sys_devcon.h</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
+            <itemPath>../src/system_config/pic32mx250_usb/system_config.h</itemPath>
+            <itemPath>../src/system_config/pic32mx250_usb/system_definitions.h</itemPath>
+          </logicalFolder>
         </logicalFolder>
         <itemPath>../src/app.h</itemPath>
       </logicalFolder>
@@ -280,7 +299,6 @@
     <Elem>../../../..</Elem>
     <Elem>..\src</Elem>
     <Elem>../src/system_config/pic32mx250_usb</Elem>
-    <Elem>../src/pic32mx250_usb</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -734,6 +752,26 @@
         <C32Global>
         </C32Global>
       </item>
+      <item path="../src/system_config/pic32mx250_usb/bsp/bsp.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../src/system_config/pic32mx250_usb/framework/system/devcon/src/sys_devcon_local.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../src/system_config/pic32mx250_usb/framework/system/devcon/sys_devcon.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../src/system_config/pic32mx250_usb/system_config.h"
+            ex="true"
+            overriding="false">
+      </item>
+      <item path="../src/system_config/pic32mx250_usb/system_definitions.h"
+            ex="true"
+            overriding="false">
+      </item>
       <C32>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
@@ -743,7 +781,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="/system_config/pic32mx250_usb;/pic32mx250_usb;/system_config/pic32mx250_usb/framework;/system_config/pic32mx250_usb/bsp;../src/system_config/pic32mx250_usb/bsp;../src;../src/system_config/pic32mx250_usb;../src/pic32mx250_usb;../../../../../../framework;../src/system_config/pic32mx250_usb/framework"/>
+                  value="/system_config/pic32mx250_usb;/pic32mx250_usb;/system_config/pic32mx250_usb/framework;/system_config/pic32mx250_usb/bsp;../src/system_config/pic32mx250_usb;../src/pic32mx250_usb;../src/system_config/pic32mx250_usb/framework;../src/system_config/pic32mx250_usb/bsp;../src;../src/system_config/pic32mx250_usb;../src/pic32mx250_usb;../../../../../../framework;../src/system_config/pic32mx250_usb/framework"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>

@@ -206,7 +206,7 @@
       <Template dnOrder="1">
         <Name dnOrder="0">sys_ports_static.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mx250_usb/framework/system/ports/src</Path>
-        <Checksum dnOrder="2">4AAD8F9C13EE87EED677C858E9122B61</Checksum>
+        <Checksum dnOrder="2">CCC8731C43957332152D8F58E1F39E69</Checksum>
       </Template>
       <Template dnOrder="2">
         <Name dnOrder="0">system_tasks.c</Name>
@@ -221,7 +221,8 @@
       <Template dnOrder="4">
         <Name dnOrder="0">system_init.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mx250_usb</Path>
-        <Checksum dnOrder="2">A0DD3B5D2F7605FE098F0DBEC6297246</Checksum>
+        <Checksum dnOrder="2">F4B1A659AB1C8D11991A153E5486D557</Checksum>
+        <ProjectFileChecksum dnOrder="3">B2C07C94D8AEE12355334EB4626D55A4</ProjectFileChecksum>
       </Template>
       <Template dnOrder="5">
         <Name dnOrder="0">sys_clk_pic32mx.c</Name>
@@ -240,36 +241,46 @@
       <Template dnOrder="8">
         <Name dnOrder="0">system_definitions.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32mx250_usb</Path>
-        <Checksum dnOrder="2">6E0A4B8347808DBA3B404259ACCF4A2E</Checksum>
+        <Checksum dnOrder="2">E72B7DFDB0D1E8183D0F328694B65F81</Checksum>
       </Template>
       <Template dnOrder="9">
         <Name dnOrder="0">system_interrupt.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mx250_usb</Path>
-        <Checksum dnOrder="2">D06EE7D3DB7E47086177F0950BEA0DAE</Checksum>
+        <Checksum dnOrder="2">25F1BB8523C1FE226A610F74B0BEB95A</Checksum>
       </Template>
       <Template dnOrder="10">
+        <Name dnOrder="0">drv_adc_static.h</Name>
+        <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32mx250_usb/framework/driver/adc</Path>
+        <Checksum dnOrder="2">CF7143BC280AF7D6A3043832FB848EFF</Checksum>
+      </Template>
+      <Template dnOrder="11">
         <Name dnOrder="0">app.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app</Path>
       </Template>
-      <Template dnOrder="11">
+      <Template dnOrder="12">
         <Name dnOrder="0">system_config.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32mx250_usb</Path>
-        <Checksum dnOrder="2">26E5220998D49350B10A7FD4FD35FF05</Checksum>
+        <Checksum dnOrder="2">468909D8D9A808A99E3FA74CC038EFF5</Checksum>
       </Template>
-      <Template dnOrder="12">
+      <Template dnOrder="13">
         <Name dnOrder="0">sys_devcon.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32mx250_usb/framework/system/devcon</Path>
         <Checksum dnOrder="2">07580DCDEF89D9C79B062544109C5367</Checksum>
       </Template>
-      <Template dnOrder="13">
+      <Template dnOrder="14">
         <Name dnOrder="0">sys_devcon.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mx250_usb/framework/system/devcon/src</Path>
         <Checksum dnOrder="2">54ADBD4A35BCA03C42C74182FCE41849</Checksum>
       </Template>
-      <Template dnOrder="14">
+      <Template dnOrder="15">
         <Name dnOrder="0">system_exceptions.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mx250_usb</Path>
         <Checksum dnOrder="2">C6886A1D85FB1927A101D5B41BED7630</Checksum>
+      </Template>
+      <Template dnOrder="16">
+        <Name dnOrder="0">drv_adc_static.c</Name>
+        <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mx250_usb/framework/driver/adc/src</Path>
+        <Checksum dnOrder="2">0655F86EF280059F94A1AC57DA580D4C</Checksum>
       </Template>
     </Templates>
     <CompilerItems dnOrder="2">
