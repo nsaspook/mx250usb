@@ -5,7 +5,7 @@
     <SystemStartScript dnOrder="1"/>
   </DisplayManager>
   <General>
-    <HarmonyPath dnOrder="0" path="../../../.."/>
+    <HarmonyPath dnOrder="0" path="../microchip/harmony/v2_04"/>
     <Processor dnOrder="1" name="PIC32MX250F128B"/>
     <Board dnOrder="2" name=""/>
     <ForceOptimization dnOrder="3" flag="true"/>
@@ -221,8 +221,8 @@
       <Template dnOrder="4">
         <Name dnOrder="0">system_init.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mx250_usb</Path>
-        <Checksum dnOrder="2">F4B1A659AB1C8D11991A153E5486D557</Checksum>
-        <ProjectFileChecksum dnOrder="3">B2C07C94D8AEE12355334EB4626D55A4</ProjectFileChecksum>
+        <Checksum dnOrder="2">2185C2A7DF10407F9640B33788D28790</Checksum>
+        <ProjectFileChecksum dnOrder="3">C1D1EB7EE83D006F106B14FB81C8C957</ProjectFileChecksum>
       </Template>
       <Template dnOrder="5">
         <Name dnOrder="0">sys_clk_pic32mx.c</Name>
@@ -260,7 +260,7 @@
       <Template dnOrder="12">
         <Name dnOrder="0">system_config.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32mx250_usb</Path>
-        <Checksum dnOrder="2">468909D8D9A808A99E3FA74CC038EFF5</Checksum>
+        <Checksum dnOrder="2">EB735D1AC1938E583AB904E144DB602C</Checksum>
       </Template>
       <Template dnOrder="13">
         <Name dnOrder="0">sys_devcon.h</Name>
@@ -285,15 +285,15 @@
     </Templates>
     <CompilerItems dnOrder="2">
       <C32 dnOrder="0">
-        <Include dnOrder="0" value="/root/microchip/harmony/v2_04/apps/usb/device/cdc_com_port_dual/firmware/src"/>
-        <Include dnOrder="1" value="/root/microchip/harmony/v2_04/apps/usb/device/cdc_com_port_dual/firmware/src/system_config/pic32mx250_usb"/>
-        <Include dnOrder="2" value="/root/microchip/harmony/v2_04/apps/usb/device/cdc_com_port_dual/firmware/src/pic32mx250_usb"/>
+        <Include dnOrder="0" value="/root/mx250usb/firmware/src"/>
+        <Include dnOrder="1" value="/root/mx250usb/firmware/src/system_config/pic32mx250_usb"/>
+        <Include dnOrder="2" value="/root/mx250usb/firmware/src/pic32mx250_usb"/>
         <Include dnOrder="3" value="/root/microchip/harmony/v2_04/framework"/>
-        <Include dnOrder="4" value="/root/microchip/harmony/v2_04/apps/usb/device/cdc_com_port_dual/firmware/src/system_config/pic32mx250_usb/framework"/>
+        <Include dnOrder="4" value="/root/mx250usb/firmware/src/system_config/pic32mx250_usb/framework"/>
       </C32>
     </CompilerItems>
     <Libraries dnOrder="3">
-      <Library dnOrder="0" value="../../../../../../bin/framework/peripheral/PIC32MX250F128B_peripherals.a"/>
+      <Library dnOrder="0" value="../../../microchip/harmony/v2_04/bin/framework/peripheral/PIC32MX250F128B_peripherals.a"/>
     </Libraries>
   </Manifest>
 </Configuration>

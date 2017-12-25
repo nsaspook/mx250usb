@@ -67,7 +67,7 @@ static const PORTS_CHANNEL led_port_channel_map[] =
 {
     PORT_CHANNEL_B,
     PORT_CHANNEL_B,
-    PORT_CHANNEL_B
+    PORT_CHANNEL_A
 };
 
 // *****************************************************************************
@@ -87,8 +87,8 @@ static const PORTS_CHANNEL led_port_channel_map[] =
 static const PORTS_BIT_POS led_port_bit_pos_map[] =
 {
     PORTS_BIT_POS_9,
-    PORTS_BIT_POS_9,
-    PORTS_BIT_POS_9
+    PORTS_BIT_POS_15,
+    PORTS_BIT_POS_3
 };
 
 // *****************************************************************************
