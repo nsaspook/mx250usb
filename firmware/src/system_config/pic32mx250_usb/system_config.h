@@ -81,28 +81,28 @@ extern "C" {
 // *****************************************************************************
 /* Clock System Service Configuration Options
 */
-#define SYS_CLK_FREQ                        48000000ul
-#define SYS_CLK_BUS_PERIPHERAL_1            48000000ul
+#define SYS_CLK_FREQ                        40000000ul
+#define SYS_CLK_BUS_PERIPHERAL_1            40000000ul
 #define SYS_CLK_UPLL_BEFORE_DIV2_FREQ       120000000ul
 #define SYS_CLK_CONFIG_PRIMARY_XTAL         10000000ul
 #define SYS_CLK_CONFIG_SECONDARY_XTAL       32768ul
    
 /*** Ports System Service Configuration ***/
-#define SYS_PORT_A_ANSEL        0xFFFF
-#define SYS_PORT_A_TRIS         0xFFFF
+#define SYS_PORT_A_ANSEL        0xFFF7
+#define SYS_PORT_A_TRIS         0xFFF7
 #define SYS_PORT_A_LAT          0x0000
 #define SYS_PORT_A_ODC          0x0000
 #define SYS_PORT_A_CNPU         0x0000
 #define SYS_PORT_A_CNPD         0x0000
 #define SYS_PORT_A_CNEN         0x0000
 
-#define SYS_PORT_B_ANSEL        0xDC5D
-#define SYS_PORT_B_TRIS         0xDDFD
+#define SYS_PORT_B_ANSEL        0x5C5D
+#define SYS_PORT_B_TRIS         0x5DFD
 #define SYS_PORT_B_LAT          0x0000
 #define SYS_PORT_B_ODC          0x0000
-#define SYS_PORT_B_CNPU         0x2200
+#define SYS_PORT_B_CNPU         0xAE00
 #define SYS_PORT_B_CNPD         0x0000
-#define SYS_PORT_B_CNEN         0x2200
+#define SYS_PORT_B_CNEN         0xA200
 
 
 /*** Interrupt System Service Configuration ***/
@@ -145,7 +145,11 @@ extern "C" {
 /*** USB Device Stack Configuration ***/
 
 
+#define APP_READ_BUFFER_SIZE 64
 
+/* Macro defines USB internal DMA Buffer criteria*/
+
+#define APP_MAKE_BUFFER_DMA_READY
 
 
 
@@ -166,6 +170,12 @@ extern "C" {
 
 
 
+/* Enable Advanced String Descriptor table. This feature lets the user specify 
+   String Index along with the String descriptor Structure  */
+#define USB_DEVICE_STRING_DESCRIPTOR_TABLE_ADVANCED_ENABLE
+
+/* Enable Microsoft OS Descriptor support.  */
+#define USB_DEVICE_MICROSOFT_OS_DESCRIPTOR_SUPPORT_ENABLE
 
 
 
@@ -202,18 +212,26 @@ extern "C" {
 // *****************************************************************************
 /*** Application Defined Pins ***/
 
+/*** Functions for APP_USB_LED_3 pin ***/
+#define APP_USB_LED_3Toggle() PLIB_PORTS_PinToggle(PORTS_ID_0, PORT_CHANNEL_A, PORTS_BIT_POS_3)
+#define APP_USB_LED_3On() PLIB_PORTS_PinSet(PORTS_ID_0, PORT_CHANNEL_A, PORTS_BIT_POS_3)
+#define APP_USB_LED_3Off() PLIB_PORTS_PinClear(PORTS_ID_0, PORT_CHANNEL_A, PORTS_BIT_POS_3)
+#define APP_USB_LED_3StateGet() PLIB_PORTS_PinGetLatched(PORTS_ID_0, PORT_CHANNEL_A, PORTS_BIT_POS_3)
+
 /*** Functions for APP_USB_LED_1 pin ***/
 #define APP_USB_LED_1Toggle() PLIB_PORTS_PinToggle(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_9)
 #define APP_USB_LED_1On() PLIB_PORTS_PinSet(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_9)
 #define APP_USB_LED_1Off() PLIB_PORTS_PinClear(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_9)
 #define APP_USB_LED_1StateGet() PLIB_PORTS_PinGetLatched(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_9)
 
+/*** Functions for APP_USB_LEB_2 pin ***/
+#define APP_USB_LEB_2Toggle() PLIB_PORTS_PinToggle(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_15)
+#define APP_USB_LEB_2On() PLIB_PORTS_PinSet(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_15)
+#define APP_USB_LEB_2Off() PLIB_PORTS_PinClear(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_15)
+#define APP_USB_LEB_2StateGet() PLIB_PORTS_PinGetLatched(PORTS_ID_0, PORT_CHANNEL_B, PORTS_BIT_POS_15)
+
 
 /*** Application Instance 0 Configuration ***/
-    
-#define APP_READ_BUFFER_SIZE 64
-
-#define APP_MAKE_BUFFER_DMA_READY
 
 //DOM-IGNORE-BEGIN
 #ifdef __cplusplus

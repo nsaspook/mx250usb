@@ -69,10 +69,10 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 
 /*** DEVCFG1 ***/
 
-#pragma config FNOSC =      FRCPLL
+#pragma config FNOSC =      PRIPLL
 #pragma config FSOSCEN =    OFF
 #pragma config IESO =       OFF
-#pragma config POSCMOD =    OFF
+#pragma config POSCMOD =    EC
 #pragma config OSCIOFNC =   OFF
 #pragma config FPBDIV =     DIV_1
 #pragma config FCKSM =      CSDCMD
@@ -83,7 +83,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 /*** DEVCFG2 ***/
 
 #pragma config FPLLIDIV =   DIV_2
-#pragma config FPLLMUL =    MUL_24
+#pragma config FPLLMUL =    MUL_16
 #pragma config FPLLODIV =   DIV_2
 #pragma config UPLLIDIV =   DIV_2
 #pragma config UPLLEN =     OFF
@@ -372,47 +372,58 @@ USB_DEVICE_CONFIGURATION_DESCRIPTORS_TABLE fullSpeedConfigDescSet[1] =
 /*******************************************
  *  Language code string descriptor
  *******************************************/
-    const struct
+    const struct __attribute__ ((packed))
     {
-    uint8_t bLength;
-    uint8_t bDscType;
-    uint16_t string[1];
+        uint8_t stringIndex;    //Index of the string descriptor
+        uint16_t languageID ;   // Language ID of this string.
+        uint8_t bLength;        // Size of this descriptor in bytes
+        uint8_t bDscType;       // STRING descriptor type 
+        uint16_t string[1];     // String
 }
     sd000 =
     {
-        sizeof(sd000),          // Size of this descriptor in bytes
-        USB_DESCRIPTOR_STRING,  // STRING descriptor type
+        0, // Index of this string is 0
+        0, // This field is always blank for String Index 0
+        sizeof(sd000)-sizeof(sd000.stringIndex)-sizeof(sd000.languageID),
+        USB_DESCRIPTOR_STRING,
         {0x0409}                // Language ID
 };
 /*******************************************
  *  Manufacturer string descriptor
  *******************************************/
-    const struct
+    const struct __attribute__ ((packed))
     {
+        uint8_t stringIndex;    //Index of the string descriptor
+        uint16_t languageID ;    // Language ID of this string.
         uint8_t bLength;        // Size of this descriptor in bytes
         uint8_t bDscType;       // STRING descriptor type
         uint16_t string[8];    // String
 }
     sd001 =
     {
-        sizeof(sd001),
+        1,      // Index of this string descriptor is 1. 
+        0x0409, // Language ID of this string descriptor is 0x0409 (English)
+        sizeof(sd001)-sizeof(sd001.stringIndex)-sizeof(sd001.languageID),
         USB_DESCRIPTOR_STRING,
         {'N','S','A','S','P','O','O','K'}
-
 };
 
 /*******************************************
  *  Product string descriptor
  *******************************************/
-    const struct
+    const struct __attribute__ ((packed))
     {
+        uint8_t stringIndex;    //Index of the string descriptor
+        uint16_t languageID ;   // Language ID of this string.
         uint8_t bLength;        // Size of this descriptor in bytes
         uint8_t bDscType;       // STRING descriptor type
         uint16_t string[15];    // String
 }
     sd002 =
     {
-        sizeof(sd002),
+        2,       // Index of this string descriptor is 2. 
+        0x0409,  // Language ID of this string descriptor is 0x0409 (English)
+        sizeof(sd002)-sizeof(sd002.stringIndex)-sizeof(sd002.languageID),
         USB_DESCRIPTOR_STRING,
 		{'m','x','2','5','0',' ','D','A','Q','D','E','V','I','C','E'}
 };
