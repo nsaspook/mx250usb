@@ -348,9 +348,14 @@ void APP_Initialize(void)
 
 void APP_Tasks(void)
 {
-	static uint32_t counts;
+	static uint32_t counts, limits=100000;
+	
 	/* Update the application state machine based
 	 * on the current state */
+			if (++counts > limits) {
+			counts = 0;
+//			BSP_LEDToggle(APP_USB_LED_1);
+		}
 
 	switch (appData.state) {
 	case APP_STATE_INIT:
@@ -394,19 +399,17 @@ void APP_Tasks(void)
 				com2ReadBuffer, APP_READ_BUFFER_SIZE);
 
 		}
-		if (++counts > 100000) {
-			counts = 0;
-			BSP_LEDToggle(APP_USB_LED_1);
-		}
+		limits=1000000;
 		break;
 
 	case APP_STATE_CHECK_IF_CONFIGURED:
 
 		if (appData.isConfigured) {
 			/* This means this device is still configured */
-
+			limits=100000;
 			appData.state = APP_STATE_CHECK_FOR_READ_COMPLETE;
 		} else {
+			limits=1000000;
 			APP_StateReset();
 			appData.state = APP_STATE_WAIT_FOR_CONFIGURATION;
 		}

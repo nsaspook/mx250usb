@@ -83,8 +83,8 @@ extern "C" {
 */
 #define SYS_CLK_FREQ                        40000000ul
 #define SYS_CLK_BUS_PERIPHERAL_1            40000000ul
-#define SYS_CLK_UPLL_BEFORE_DIV2_FREQ       120000000ul
-#define SYS_CLK_CONFIG_PRIMARY_XTAL         10000000ul
+#define SYS_CLK_UPLL_BEFORE_DIV2_FREQ       96000000ul
+#define SYS_CLK_CONFIG_PRIMARY_XTAL         8000000ul
 #define SYS_CLK_CONFIG_SECONDARY_XTAL       32768ul
    
 /*** Ports System Service Configuration ***/
@@ -96,8 +96,8 @@ extern "C" {
 #define SYS_PORT_A_CNPD         0x0000
 #define SYS_PORT_A_CNEN         0x0000
 
-#define SYS_PORT_B_ANSEL        0x5C5D
-#define SYS_PORT_B_TRIS         0x5DFD
+#define SYS_PORT_B_ANSEL        0x5C4D
+#define SYS_PORT_B_TRIS         0x5DED
 #define SYS_PORT_B_LAT          0x0000
 #define SYS_PORT_B_ODC          0x0000
 #define SYS_PORT_B_CNPU         0xAE00
@@ -156,7 +156,6 @@ extern "C" {
 
 
 
-
 /* The USB Device Layer will not initialize the USB Driver */
 #define USB_DEVICE_DRIVER_INITIALIZE_EXPLICIT
 
@@ -170,12 +169,6 @@ extern "C" {
 
 
 
-/* Enable Advanced String Descriptor table. This feature lets the user specify 
-   String Index along with the String descriptor Structure  */
-#define USB_DEVICE_STRING_DESCRIPTOR_TABLE_ADVANCED_ENABLE
-
-/* Enable Microsoft OS Descriptor support.  */
-#define USB_DEVICE_MICROSOFT_OS_DESCRIPTOR_SUPPORT_ENABLE
 
 
 
