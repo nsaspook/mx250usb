@@ -42,158 +42,154 @@
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
       </File>
       <File dnOrder="7">
-        <Name dnOrder="0">usb_device_endpoint_functions.c</Name>
-        <Path dnOrder="1">Source&amp;#160;Files/framework/usb/src/dynamic</Path>
-      </File>
-      <File dnOrder="8">
         <Name dnOrder="0">drv_usbhs.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/driver/usb/usbhs</Path>
       </File>
-      <File dnOrder="9">
+      <File dnOrder="8">
         <Name dnOrder="0">usb_host_hub_interface.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
       </File>
-      <File dnOrder="10">
+      <File dnOrder="9">
         <Name dnOrder="0">usb_device_local.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb/src</Path>
       </File>
-      <File dnOrder="11">
+      <File dnOrder="10">
         <Name dnOrder="0">usb_common.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
       </File>
-      <File dnOrder="12">
+      <File dnOrder="11">
         <Name dnOrder="0">sys_ports.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/ports</Path>
       </File>
-      <File dnOrder="13">
+      <File dnOrder="12">
         <Name dnOrder="0">usb_chapter_9.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
       </File>
-      <File dnOrder="14">
+      <File dnOrder="13">
         <Name dnOrder="0">driver.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/driver</Path>
       </File>
-      <File dnOrder="15">
+      <File dnOrder="14">
         <Name dnOrder="0">usb_hub.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
       </File>
-      <File dnOrder="16">
+      <File dnOrder="15">
         <Name dnOrder="0">sys_common.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/common</Path>
       </File>
-      <File dnOrder="17">
+      <File dnOrder="16">
         <Name dnOrder="0">sys_buffer.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/common</Path>
       </File>
-      <File dnOrder="18">
+      <File dnOrder="17">
         <Name dnOrder="0">sys_int_pic32.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/system/int/src</Path>
       </File>
-      <File dnOrder="19">
+      <File dnOrder="18">
         <Name dnOrder="0">usb_device_mapping.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb/src</Path>
       </File>
-      <File dnOrder="20">
+      <File dnOrder="19">
         <Name dnOrder="0">usb_host_hub.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
       </File>
-      <File dnOrder="21">
+      <File dnOrder="20">
         <Name dnOrder="0">usb_device.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/usb/src/dynamic</Path>
       </File>
-      <File dnOrder="22">
+      <File dnOrder="21">
         <Name dnOrder="0">sys_clk_compatibility.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/clk</Path>
       </File>
-      <File dnOrder="23">
+      <File dnOrder="22">
         <Name dnOrder="0">sys_clk.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/clk</Path>
       </File>
-      <File dnOrder="24">
+      <File dnOrder="23">
         <Name dnOrder="0">sys_ports_definitions.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/ports</Path>
       </File>
-      <File dnOrder="25">
+      <File dnOrder="24">
         <Name dnOrder="0">osal_impl_basic.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/osal</Path>
       </File>
-      <File dnOrder="26">
+      <File dnOrder="25">
         <Name dnOrder="0">sys_clk_mapping.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/clk</Path>
       </File>
-      <File dnOrder="27">
+      <File dnOrder="26">
         <Name dnOrder="0">osal_definitions.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/osal</Path>
       </File>
-      <File dnOrder="28">
+      <File dnOrder="27">
         <Name dnOrder="0">sys_int_mapping.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/int</Path>
       </File>
-      <File dnOrder="29">
+      <File dnOrder="28">
         <Name dnOrder="0">usb_device.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
       </File>
-      <File dnOrder="30">
+      <File dnOrder="29">
         <Name dnOrder="0">sys_int_private.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/int/src</Path>
       </File>
-      <File dnOrder="31">
+      <File dnOrder="30">
         <Name dnOrder="0">system.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system</Path>
       </File>
-      <File dnOrder="32">
+      <File dnOrder="31">
         <Name dnOrder="0">drv_usbfs_device.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/driver/usb/usbfs/src/dynamic</Path>
       </File>
-      <File dnOrder="33">
+      <File dnOrder="32">
         <Name dnOrder="0">sys_debug.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/debug</Path>
       </File>
-      <File dnOrder="34">
+      <File dnOrder="33">
         <Name dnOrder="0">usb_device_cdc_acm.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/usb/src/dynamic</Path>
       </File>
-      <File dnOrder="35">
+      <File dnOrder="34">
         <Name dnOrder="0">sys_module.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/common</Path>
       </File>
-      <File dnOrder="36">
+      <File dnOrder="35">
         <Name dnOrder="0">usb_cdc.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
       </File>
-      <File dnOrder="37">
+      <File dnOrder="36">
         <Name dnOrder="0">drv_usbfs.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/driver/usb/usbfs</Path>
       </File>
-      <File dnOrder="38">
+      <File dnOrder="37">
         <Name dnOrder="0">drv_usbfs_variant_mapping.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/driver/usb/usbfs/src</Path>
       </File>
-      <File dnOrder="39">
+      <File dnOrder="38">
         <Name dnOrder="0">usb_device_cdc_local.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb/src</Path>
       </File>
-      <File dnOrder="40">
+      <File dnOrder="39">
         <Name dnOrder="0">sys_queue.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/common</Path>
       </File>
-      <File dnOrder="41">
+      <File dnOrder="40">
         <Name dnOrder="0">usb_device_cdc.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/framework/usb/src/dynamic</Path>
       </File>
-      <File dnOrder="42">
+      <File dnOrder="41">
         <Name dnOrder="0">sys_int.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/system/int</Path>
       </File>
-      <File dnOrder="43">
+      <File dnOrder="42">
         <Name dnOrder="0">drv_usbfs_mapping.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/driver/usb/usbfs</Path>
       </File>
-      <File dnOrder="44">
+      <File dnOrder="43">
         <Name dnOrder="0">drv_usb.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/driver/usb</Path>
       </File>
-      <File dnOrder="45">
+      <File dnOrder="44">
         <Name dnOrder="0">usb_host_client_driver.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/framework/usb</Path>
       </File>
@@ -221,7 +217,7 @@
       <Template dnOrder="4">
         <Name dnOrder="0">system_init.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/pic32mx250_usb</Path>
-        <Checksum dnOrder="2">CECD0F67475520698E442246200FE79C</Checksum>
+        <Checksum dnOrder="2">A69F4FB5EE36EFFD7512BC2386F553A6</Checksum>
         <ProjectFileChecksum dnOrder="3">B2C07C94D8AEE12355334EB4626D55A4</ProjectFileChecksum>
       </Template>
       <Template dnOrder="5">
@@ -260,7 +256,7 @@
       <Template dnOrder="12">
         <Name dnOrder="0">system_config.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app/system_config/pic32mx250_usb</Path>
-        <Checksum dnOrder="2">265A5DE754440A4372F52BCFF6E5E182</Checksum>
+        <Checksum dnOrder="2">1CE7AFB06F335FB13AD9082BF516BB5A</Checksum>
         <ProjectFileChecksum dnOrder="3">380141BC26F6A7612F35BF3ECAC31F0D</ProjectFileChecksum>
       </Template>
       <Template dnOrder="13">
